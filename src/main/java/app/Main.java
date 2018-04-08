@@ -70,5 +70,6 @@ public class Main {
             double num2 = input.nextDouble();
 
             return num1 * num2;
+
     }
 }
