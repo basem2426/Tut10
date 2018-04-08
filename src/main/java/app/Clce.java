@@ -16,12 +16,23 @@ public class Clce {
        int y =20;
        //طريقة عملية ان قيمة الكس والواي كما هو مكتوب ادناه
 
-       System.out.println(x==y);
-       System.out.println(x!=y);
-       System.out.println(x > y);
-        System.out.println(x < y);
-        System.out.println(x >= y);
-        System.out.println(x<=y);
+//       System.out.println(x==y);
+//       System.out.println(x!=y);
+//       System.out.println(x > y);
+//        System.out.println(x < y);
+//        System.out.println(x >= y);
+//        System.out.println(x<=y);
+
+
+//        boolean b =true;
+//
+//        boolean s =false;
+//        System.out.println(b&&s);
+//        System.out.println(b||s);
+//        System.out.println(!(b&&s));
+
+
+
 
 
 
