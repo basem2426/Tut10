@@ -1,4 +1,4 @@
-package app;
+package  app;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
@@ -23,7 +23,7 @@ public class Java13 {
         System.out.println("***                                                           ***");
         System.out.println("***                     SMART CALCULATOR                      ***");
         System.out.println("***                                                           ***");
-        System.out.println("***               DEVELOPED BY: BASEM ALANZI                  ***");
+        System.out.println("***               DEVELOPED BY: BASSAM ALMAHDY                ***");
         System.out.println("***                                                           ***");
         System.out.println("***                                                           ***");
         System.out.println("*****************************************************************");
@@ -49,8 +49,7 @@ public class Java13 {
         System.out.println("5- إغــلاق                                             ");
 
         //الانتظار لادخالات المستخدم وحجز مكان فى الذاكرة لرقم الخيار المحدد
-        int option = getNumberFromUser();
-
+        int option = checkNumber(scanner.nextInt());
 
         //بدء طلب الرقم الاول من المستخدم وتحزينه فى المتغير سابقاً فى رأس الكلاس
         System.out.println("فضلاً ادخل الرقم الأول:                                 ");
@@ -169,5 +168,13 @@ public class Java13 {
         return result;
     }
 
-
-     }
+    public static int checkNumber(int option) {
+        option = getNumberFromUser();
+        if (option < 0 || option > 5) {
+            System.out.println("فضلا تأكد من الاختيار الصحيح");
+            scanner.nextLine();
+            option = checkNumber(option);
+        }
+        return option;
+    }
+}
